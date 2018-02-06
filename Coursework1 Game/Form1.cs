@@ -50,13 +50,14 @@ namespace Coursework1_Game
 
             if (playerTurn)
             {
-                //Check if the space clicked is taken.
+                //Check if space there is space in the column.
                 btn.BackColor = Color.Red;
                 playerTurn = false;
 
             }
             else
             {
+                //Check if space there is space in the column.
                 btn.BackColor = Color.Yellow;
                 playerTurn = true;
 
