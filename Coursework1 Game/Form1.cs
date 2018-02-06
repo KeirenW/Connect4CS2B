@@ -50,6 +50,7 @@ namespace Coursework1_Game
 
             if (playerTurn)
             {
+                //Check if the space clicked is taken.
                 btn.BackColor = Color.Red;
                 playerTurn = false;
 
