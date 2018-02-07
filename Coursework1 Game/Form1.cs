@@ -111,7 +111,16 @@ namespace Coursework1_Game
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This implementation of connect four was designed by Craig Wilson and Keiren Waddell");
+            MessageBox.Show("This implementation of connect four was designed by Craig Wilson and Keiren Waddell", "About");
+        }
+
+        private void rulesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "The aim of Connect 4 is to get 4 of your colour of counters in a row while stopping your opponent from doing the same." +
+                " Your 4 counters can be horizontal, vertical or diagonal as long as they are in a row and not disrupted by the other colour."
+                , "Rules"
+            );
         }
     }
 }
