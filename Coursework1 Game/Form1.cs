@@ -12,8 +12,8 @@ namespace Coursework1_Game
 {
     public partial class Form1 : Form
     {
-
         Button[,] gridBtn = new Button[7, 6];
+        GameBoard board = new GameBoard();
 
         bool playerTurn = true;
         bool gameEnd = false;
@@ -31,6 +31,8 @@ namespace Coursework1_Game
                 {
                     gridBtn[x, y] = new Button();
                     gridBtn[x, y].SetBounds((60 * x) + 10, (60 * y) + 30, 45, 45);
+                    gridBtn[x, y].Name = Convert.ToString((x) + "," + (y));
+                    gridBtn[x, y].BackColor = Color.White;
                     gridBtn[x, y].Click += new EventHandler(this.buttonClicked);
 
                     Controls.Add(gridBtn[x, y]);
@@ -50,16 +52,33 @@ namespace Coursework1_Game
 
             if (playerTurn)
             {
-                //Check if space there is space in the column.
-                btn.BackColor = Color.Red;
-                playerTurn = false;
+                //Check if space there is space in the column
+                int x = (int)Char.GetNumericValue(btn.Name[0]);
+                int counterY = board.checkColumn(x, gridBtn);
+                if (counterY > 6)
+                {
+                    //Move invalid
+                } else
+                {
+                    //Valid.. Place counter
+                    gridBtn[x,counterY].BackColor = Color.Red;
+                    playerTurn = false;
+                }
 
-            }
-            else
+            } else
             {
-                //Check if space there is space in the column.
-                btn.BackColor = Color.Yellow;
-                playerTurn = true;
+                int x = (int)Char.GetNumericValue(btn.Name[0]);
+                int counterY = board.checkColumn(x, gridBtn);
+                if (counterY > 6)
+                {
+                    //Move invalid
+                }
+                else
+                {
+                    //Valid.. Place counter
+                    gridBtn[x, counterY].BackColor = Color.Yellow;
+                    playerTurn = true;
+                }
 
             }
         }
