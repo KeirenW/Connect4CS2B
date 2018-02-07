@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Coursework1_Game
 {
-    public partial class Form1 : Form
+    public partial class gameWindow : Form
     {
         Button[,] gridBtn = new Button[7, 6];
         GameBoard board = new GameBoard();
 
         bool playerTurn = true;
         bool gameEnd = false;
-        public Form1()
+        public gameWindow()
         {
             InitializeComponent();
             initGameBoard();
@@ -25,6 +25,9 @@ namespace Coursework1_Game
 
         public void initGameBoard()
         {
+            this.BackColor = Color.WhiteSmoke;
+
+            //Add button grid for the game.
             for (int x = 0; x < gridBtn.GetLength(0); x++)
             {
                 for (int y = 0; y < gridBtn.GetLength(1); y++)
@@ -46,6 +49,9 @@ namespace Coursework1_Game
 
         }
 
+        /**
+         * Event handler for buttons
+         */
         void buttonClicked(Object sender, EventArgs e)
         {
             Button btn = (Button)sender;
@@ -62,6 +68,7 @@ namespace Coursework1_Game
                 {
                     //Valid.. Place counter
                     gridBtn[x,counterY].BackColor = Color.Red;
+                    currentTurn.BackgroundImage = Properties.Resources.YellowTurn;
                     playerTurn = false;
                 }
 
@@ -77,6 +84,7 @@ namespace Coursework1_Game
                 {
                     //Valid.. Place counter
                     gridBtn[x, counterY].BackColor = Color.Yellow;
+                    currentTurn.BackgroundImage = Properties.Resources.RedTurn;
                     playerTurn = true;
                 }
 
