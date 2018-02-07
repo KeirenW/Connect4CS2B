@@ -8,6 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//TODO: Implement win conditions, should do this in the gameboard class.
+//TODO: Add Restart button and code in the menu.
+//TODO: Add Rules button and messagebox in the menu.
+
 namespace Coursework1_Game
 {
     public partial class gameWindow : Form
@@ -44,11 +48,6 @@ namespace Coursework1_Game
             }
         }
 
-        public void gameplay()
-        {
-
-        }
-
         /**
          * Event handler for buttons
          */
@@ -64,11 +63,15 @@ namespace Coursework1_Game
                 if (counterY > 6)
                 {
                     //Move invalid
+                    Console.WriteLine("Move was invalid...");
                 } else
                 {
                     //Valid.. Place counter
                     gridBtn[x,counterY].BackColor = Color.Red;
                     currentTurn.BackgroundImage = Properties.Resources.YellowTurn;
+
+                    //TODO: Check if player has won.
+
                     playerTurn = false;
                 }
 
@@ -79,11 +82,16 @@ namespace Coursework1_Game
                 if (counterY > 6)
                 {
                     //Move invalid
+                    Console.WriteLine("Move was invalid...");
                 }
                 else
                 {
                     //Valid.. Place counter
                     gridBtn[x, counterY].BackColor = Color.Yellow;
+
+                    //TODO: Check if player has won.
+
+                    //Change image at bottom to next player
                     currentTurn.BackgroundImage = Properties.Resources.RedTurn;
                     playerTurn = true;
                 }
