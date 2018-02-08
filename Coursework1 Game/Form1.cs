@@ -10,7 +10,6 @@ using System.Windows.Forms;
 
 //TODO: Implement win conditions, should do this in the gameboard class.
 //TODO: Add Restart button and code in the menu.
-//TODO: Add Rules button and messagebox in the menu.
 
 namespace Coursework1_Game
 {
