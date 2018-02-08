@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 //TODO: Implement win conditions, should do this in the gameboard class.
-//TODO: Add Restart button and code in the menu.
 
 namespace Coursework1_Game
 {
@@ -120,6 +119,17 @@ namespace Coursework1_Game
                 " Your 4 counters can be horizontal, vertical or diagonal as long as they are in a row and not disrupted by the other colour."
                 , "Rules"
             );
+        }
+
+        private void restartToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            for(int i = 0; i < 7; ++i)
+            {
+                for(int j = 0; j < 6; ++j)
+                {
+                    gridBtn[i, j].BackColor = Color.White;
+                }
+            }
         }
     }
 }
