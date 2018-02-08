@@ -1,0 +1,10 @@
+C:\Users\craigwilson\Downloads\Connect4CS2B-master\Connect4CS2B-master\Coursework1 Game\bin\Debug\Coursework1 Game.exe.config
+C:\Users\craigwilson\Downloads\Connect4CS2B-master\Connect4CS2B-master\Coursework1 Game\bin\Debug\Coursework1 Game.exe
+C:\Users\craigwilson\Downloads\Connect4CS2B-master\Connect4CS2B-master\Coursework1 Game\bin\Debug\Coursework1 Game.pdb
+C:\Users\craigwilson\Downloads\Connect4CS2B-master\Connect4CS2B-master\Coursework1 Game\obj\Debug\Coursework1 Game.csprojResolveAssemblyReference.cache
+C:\Users\craigwilson\Downloads\Connect4CS2B-master\Connect4CS2B-master\Coursework1 Game\obj\Debug\Coursework1_Game.gameWindow.resources
+C:\Users\craigwilson\Downloads\Connect4CS2B-master\Connect4CS2B-master\Coursework1 Game\obj\Debug\Coursework1_Game.Properties.Resources.resources
+C:\Users\craigwilson\Downloads\Connect4CS2B-master\Connect4CS2B-master\Coursework1 Game\obj\Debug\Coursework1 Game.csproj.GenerateResource.Cache
+C:\Users\craigwilson\Downloads\Connect4CS2B-master\Connect4CS2B-master\Coursework1 Game\obj\Debug\Coursework1 Game.csproj.CoreCompileInputs.cache
+C:\Users\craigwilson\Downloads\Connect4CS2B-master\Connect4CS2B-master\Coursework1 Game\obj\Debug\Coursework1 Game.exe
+C:\Users\craigwilson\Downloads\Connect4CS2B-master\Connect4CS2B-master\Coursework1 Game\obj\Debug\Coursework1 Game.pdb
