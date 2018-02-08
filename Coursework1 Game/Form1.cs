@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-//TODO: Implement win conditions, should do this in the gameboard class.
+//TODO: Implement win conditions - check after every turn.
+//TODO: Check for full board after every turn - if full and no win annouce draw.
 
 namespace Coursework1_Game
 {
@@ -68,7 +69,7 @@ namespace Coursework1_Game
                     gridBtn[x,counterY].BackColor = Color.Red;
                     currentTurn.BackgroundImage = Properties.Resources.YellowTurn;
 
-                    //TODO: Check if player has won.
+                    //TODO: Check if player has won or baord is full.
 
                     playerTurn = false;
                 }
@@ -87,7 +88,7 @@ namespace Coursework1_Game
                     //Valid.. Place counter
                     gridBtn[x, counterY].BackColor = Color.Yellow;
 
-                    //TODO: Check if player has won.
+                    //TODO: Check if player has won or baord is full.
 
                     //Change image at bottom to next player
                     currentTurn.BackgroundImage = Properties.Resources.RedTurn;
